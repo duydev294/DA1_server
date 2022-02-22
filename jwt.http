@@ -1,0 +1,51 @@
+
+POST http://localhost:3000/api/user/register
+
+{
+    "name":"duy",
+    "email":"duy123@gmail.com",
+    "account":"duyvippro09",
+    "password":"123456"
+    
+}
+###
+POST http://localhost:3000/api/user/login 
+    {
+        "email":"duy123@gmail.com",
+        "password":"123456" 
+    }
+
+###
+POST http://localhost:3000/api/device/create
+    header:
+    {   
+        "jwt":""
+    }
+    body:
+    {
+        "name":"Humi"
+    }
+###
+POST http://localhost:3000/api/device/delete
+    header:
+    {
+        "jwt":""
+    }
+    body:
+    {
+        "api_device":""
+    }
+
+###
+GET http://localhost:3000/api/device/get_data
+    header:
+    {
+        "jwt":""
+    }
+    body:{
+        "api_device":""
+    }
+
+### 
+GET http://localhost:3000/api/device/
+
